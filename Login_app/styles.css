@@ -1,0 +1,179 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #d9d9d9; /* Cor de fundo da página */
+    margin: 0;
+    padding: 0;
+    padding-top: 52px; /* Altura do cabeçalho */
+}
+
+/* Estilo do Header */
+header {
+    width: 100%;
+    background-color: #617eaa; /* Cor de fundo do cabeçalho */
+    padding: 12px; /* Padding do cabeçalho */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: fixed; /* Fixando o cabeçalho na parte superior */
+    top: 0; /* Colocando o cabeçalho no topo */
+    left: 0; /* Alinhando à esquerda */
+    z-index: 1000; /* Aumentando o z-index para garantir que fique acima de outros elementos */
+}
+
+/* Estilo da Interface */
+.interface {
+    display: flex;
+    justify-content: flex-start; /* Alinha a logo e o título à esquerda */
+    align-items: center; /* Alinha verticalmente */
+}
+
+/* Estilo da Logo */
+.logo img {
+    width: 50px; /* Defina o tamanho desejado */
+    height: auto; /* Mantenha a proporção da imagem */
+    image-rendering: crisp-edges; /* Melhora a nitidez em algumas situações */
+    image-rendering: pixelated; /* Também pode ajudar para imagens de baixa resolução */
+}
+
+/* Estilo do h1 */
+h1 {
+    color: white; /* Cor do texto do cabeçalho */
+    margin: 0; /* Remove margens padrão */
+    text-align: left; /* Alinha o texto à esquerda */
+    font-size: 24px; /* Tamanho da fonte ajustado */
+    margin-left: 15px; /* Margem à esquerda para espaçamento */
+}
+
+/* Container principal */
+.container {
+    width: 100%;
+    max-width: 350px; /* Reduzindo a largura máxima do contêiner */
+    margin: 60px auto; /* Aumentando a margem superior para criar mais espaço */
+    padding: 20px; /* Aumentando o padding do contêiner */
+    background-color: #d9d9d9; /* Cor de fundo igual à da página */
+    border: 2px solid white; /* Borda branca */
+    height: auto; /* Mantendo a altura automática */
+}
+
+/* Estilos do cabeçalho */
+.header {
+    text-align: center;
+    margin-bottom: 10px; /* Diminuindo a margem inferior do cabeçalho */
+}
+
+.header h1 {
+    font-size: 24px;
+    color: #333;
+}
+
+.header .cadeado {
+    margin-top: 10px;
+}
+
+.cadeado img {
+    width: 50px;
+    height: 50px;
+}
+
+/* Estilos do formulário */
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Diminuindo o espaçamento entre os elementos do formulário */
+}
+
+.input {
+    width: 100%; /* Mantendo a largura total */
+}
+
+.input label {
+    color: black; /* Cor do texto do rótulo (E-mail e Senha) */
+    margin-bottom: 5px; /* Margem inferior para espaçamento */
+}
+
+.input input {
+    width: 90%; /* Reduzindo a largura das caixas de texto para 90% */
+    padding: 10px;
+    border: none; /* Removendo bordas das caixas de texto */
+    font-size: 16px;
+    color: black; /* Cor do texto na caixa de texto */
+    border-radius: 4px; /* Bordas arredondadas */
+}
+
+.input input:focus {
+    outline: none; /* Removendo contorno padrão */
+}
+
+/* Estilos dos links */
+.forgot-password {
+    text-align: left; /* Alinha o texto à esquerda */
+    color: #004aad; /* Cor do link */
+    text-decoration: none; /* Remove sublinhado */
+}
+
+.forgot-password:hover {
+    text-decoration: underline; /* Sublinha ao passar o mouse */
+}
+
+.create-account {
+    text-align: center; /* Centraliza o texto */
+    color: #004aad; /* Cor do link */
+    text-decoration: underline; /* Adicionando traço no link */
+}
+
+/* Botão de login */
+.btn {
+    width: 100%; /* Largura dos botões para coincidir com as caixas de texto */
+    padding: 10px; /* Ajustando o padding dos botões */
+    border: none; /* Removendo a borda dos botões */
+    border-radius: 4px; /* Reduzindo o arredondamento */
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: center; /* Centralizando o texto dentro do botão */
+}
+
+.btn-login {
+    background-color: #004aad; /* Cor do botão de login */
+    color: white;
+}
+
+.btn-login:hover {
+    background-color: #003b8c; /* Cor ao passar o mouse */
+}
+
+/* Botão de login com Google */
+.btn-google {
+    background-color: #004aad; /* Cor do botão de login com Google */
+    color: white;
+}
+
+.btn-google:hover {
+    background-color: #003b8c; /* Cor ao passar o mouse */
+}
+
+/* Estilos do hr */
+hr {
+    border: 0; /* Remove a borda padrão */
+    height: 1px; /* Altura da linha */
+    background-color: #8d8b89; /* Cor da linha */
+    margin: 10px 0; /* Margem acima e abaixo da linha */
+}
+
+/* Responsividade */
+@media (max-width: 480px) {
+    .container {
+        width: 90%; /* Largura do contêiner em telas pequenas */
+    }
+    
+    h1 {
+        font-size: 20px; /* Reduzindo o tamanho da fonte do título em telas pequenas */
+    }
+
+    .input input {
+        font-size: 14px; /* Reduzindo o tamanho da fonte das caixas de texto */
+    }
+
+    .btn {
+        font-size: 14px; /* Reduzindo o tamanho da fonte dos botões */
+    }
+}
