@@ -2,7 +2,7 @@
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "portaria_inteligente";
+$dbname = "projeto_portaria";
 
 // Cria a conexão
 $conn = new mysqli($servername, $username, $password, $dbname);
