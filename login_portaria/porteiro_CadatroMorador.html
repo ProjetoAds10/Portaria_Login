@@ -4,24 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login do Porteiro</title>
-    <link rel="stylesheet" href="Login_do_Porteiro.css">
+    <link rel="stylesheet" href="porteiro_CadatroMorador.css">
 </head>
 <body>
+    <div class="header">
+        <i class="fas fa-lock"></i>
+        <h1>Portaria inteligente</h1>
+    </div>
     <div class="container">
-        <div class="header">
-            <h1>Login do Porteiro</h1>
-        </div>
         <div class="form-container">
-            <form action="process_login_do_porteiro.php" method="POST">
-                <label for="usuario">Usuário</label>
-                <input type="text" id="usuario" name="usuario" required>
+            <h2>VALIDA E CADASTRA MORADORES E VISITANTES</h2>
+            <form>
+                <label for="usuario">USUÁRIO</label>
+                <input type="text" id="usuario" name="usuario">
+                <label for="cpf">CPF/CÓDIGO DE VALIDAÇÃO</label>
+                <input type="text" id="cpf" name="cpf">
                 
-                <label for="senha">Senha</label>
-                <input type="password" id="senha" name="senha" required>
-
-                <div class="buttons">
-                    <button type="submit">Entrar</button>
-                </div>
+                <button type="submit" name="action" value="validar">Validar</button>
+                <button type="submit" name="action" value="cadastrar">Cadastrar</button>
+                
             </form>
         </div>
     </div>
