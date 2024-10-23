@@ -41,6 +41,7 @@ h1 {
 
 
 
+
 /* Container centralizado */
 .container {
     width: 100%;
@@ -59,6 +60,8 @@ h1 {
     font-size: 22px;
     margin-bottom: 20px; /* Espaçamento abaixo do título */
 }
+
+
 
 /* Centralizando o primeiro parágrafo */
 .container p:first-of-type {

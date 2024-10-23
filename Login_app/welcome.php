@@ -17,8 +17,8 @@
         </div><!--interface-->
     </header>
     <div class="container rounded-container">
-        <h1 class="welcome-text">Olá, <b><?php echo htmlspecialchars($_SESSION["email"]); ?></b>. Bem-vindo ao nosso app!</h1>
-        <p>Fique atento! Em breve enviaremos notificações de segurança.</p>
+        <h1 class="welcome-text">Bem vindo!</h1>
+               <p>Fique atento! Em breve enviaremos notificações de segurança.</p>
         <p class="button-group">
             <a href="reset-password.php" class="btn btn-warning">Redefina sua senha</a>
             <a href="logout.php" class="btn btn-danger ml-3">Sair da conta</a>
