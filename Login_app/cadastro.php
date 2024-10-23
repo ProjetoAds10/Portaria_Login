@@ -91,37 +91,56 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <head>
     <meta charset="UTF-8">
     <title>Cadastro</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <style>
-        body{ font: 14px sans-serif; }
-        .wrapper{ width: 360px; padding: 20px; margin: auto; margin-top: 50px; }
-    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="estilos/styles_cadastro.css">
 </head>
 <body>
-    <div class="wrapper">
-        <h2>Cadastro</h2>
-        <p>Por favor, preencha este formulário para criar uma conta.</p>
-        <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
-            <div class="form-group">
-                <label>E-mail</label>
-                <input type="email" name="email" class="form-control <?php echo (!empty($email_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $email; ?>">
+    
+    <header>
+        <div class="interface">
+            <div class="logo">
+                <img src="img/logo P. inteligente.png" alt="logo do site">
+            </div><!--logo-->
+            <h1>Portaria<br>Inteligente</h1>
+        </div><!--interface-->
+    </header>
+
+    <!-- Wrapper com estilo aplicado -->
+    <div class="container">
+        <div class="header">
+            <h1>Preencha o formulário para criar uma conta</h1>
+        </div>
+
+        <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="post" class="form">
+            <!-- Campo de e-mail -->
+            <div class="input-form-group">
+                <label for="email">E-mail</label>
+                <input type="email" name="email" class="form-control <?php echo (!empty($email_err)) ? 'is-invalid' : ''; ?>" value=" <?php echo $email; ?>">
                 <span class="invalid-feedback"><?php echo $email_err; ?></span>
             </div>
-            <div class="form-group">
-                <label>Senha</label>
+
+            <!-- Campo de senha -->
+            <div class="input-form-group">
+                <label for="password">Senha</label>
                 <input type="password" name="password" class="form-control <?php echo (!empty($password_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $password; ?>">
                 <span class="invalid-feedback"><?php echo $password_err; ?></span>
             </div>
-            <div class="form-group">
-                <label>Confirme a senha</label>
+
+            <!-- Campo de confirmação de senha -->
+            <div class="input-form-group">
+                <label for="confirm_password">Confirme a senha</label>
                 <input type="password" name="confirm_password" class="form-control <?php echo (!empty($confirm_password_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $confirm_password; ?>">
                 <span class="invalid-feedback"><?php echo $confirm_password_err; ?></span>
             </div>
+
+            <!-- Botões de ação -->
             <div class="form-group">
-                <input type="submit" class="btn btn-primary" value="Criar Conta">
+                <input type="submit" class="btn btn-login" value="Criar Conta">
                 <input type="reset" class="btn btn-secondary ml-2" value="Apagar Dados">
             </div>
-            <p>Já tem uma conta? <a href="login.php">Entre aqui</a>.</p>
+
+            <!-- Link para login -->
+            <p>Já tem uma conta? <a href="login.php" class="create-account">Entre aqui</a>.</p>
         </form>
     </div>
 </body>

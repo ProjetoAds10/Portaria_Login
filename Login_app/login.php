@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portaria Inteligente</title>
+    <title>Login</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-    <link rel="stylesheet" href="styles.css"> <!-- Link para o CSS -->
+    <link rel="stylesheet" href="estilos/styles_login.css"> <!-- Link para o CSS -->
 </head>
 <body>
     <header>
@@ -44,3 +44,4 @@
     </div> <!--container-->
 </body>
 </html>
+

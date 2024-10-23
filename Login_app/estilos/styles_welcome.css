@@ -1,0 +1,129 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #d9d9d9; /* Cor de fundo */
+    margin: 0;
+    padding: 0;
+    padding-top: 52px; /* Espaço para o header */
+}
+
+/* Estilo do Header */
+header {
+    width: 100%;
+    background-color: #617eaa; /* Cor do cabeçalho */
+    padding: 12px; /* Padding interno */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+    position: fixed; /* Fixar o header no topo */
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+/* Interface e logo */
+.interface {
+    display: flex;
+    justify-content: flex-start; /* Alinha a logo e o título à esquerda */
+    align-items: center; /* Alinha verticalmente */
+}
+
+.logo img {
+    width: 50px; /* Tamanho da logo */
+    height: auto;
+}
+
+h1 {
+    color: white; /* Cor do texto do cabeçalho */
+    margin: 0;
+    text-align: left; /* Alinha o texto à esquerda */
+    font-size: 24px;
+    margin-left: 15px; /* Espaçamento ao lado da logo */
+}
+
+
+
+/* Container centralizado */
+.container {
+    width: 100%;
+    max-width: 400px;
+    margin: 100px auto; /* Centraliza o container */
+    padding: 30px;
+    background-color: #ffffff; /* Fundo branco */
+    border-radius: 10px; /* Bordas levemente arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    text-align: center; /* Centraliza o conteúdo */
+}
+
+/* Estilo do h1 dentro do container */
+.welcome-text {
+    color: #333;
+    font-size: 22px;
+    margin-bottom: 20px; /* Espaçamento abaixo do título */
+}
+
+/* Centralizando o primeiro parágrafo */
+.container p:first-of-type {
+    text-align: center;
+    margin-bottom: 20px; /* Espaçamento inferior */
+}
+
+/* Estilos dos links */
+a {
+    text-decoration: none; /* Remove o sublinhado */
+    color: #004aad; /* Cor do link */
+}
+
+a:hover {
+    text-decoration: underline; /* Sublinha ao passar o mouse */
+}
+
+/* Estilos dos botões */
+.btn {
+    padding: 10px 20px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    border-radius: 8px; /* Bordas levemente arredondadas */
+}
+
+.btn-warning {
+    background-color: #004aad; /* Cor do botão principal */
+    color: white;
+}
+
+.btn-warning:hover {
+    background-color: #003b8c; /* Cor ao passar o mouse */
+}
+
+.btn-danger {
+    background-color: #6c757d; /* Cor do botão secundário */
+    color: white;
+}
+
+.btn-danger:hover {
+    background-color: #5a6268; /* Cor ao passar o mouse */
+}
+
+/* Centralizando os botões */
+.button-group {
+    display: flex;
+    justify-content: center; /* Centraliza os botões */
+    gap: 10px; /* Espaçamento entre os botões */
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 480px) {
+    .container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    .btn {
+        font-size: 14px;
+    }
+}

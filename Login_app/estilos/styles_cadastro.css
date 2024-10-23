@@ -1,0 +1,182 @@
+/* Estilos gerais */
+* {
+    box-sizing: border-box; /* Inclui o padding e a borda no cálculo da largura e altura */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #d9d9d9; /* Cor de fundo da página */
+    margin: 0;
+    padding: 0;
+    padding-top: 52px; /* Altura do cabeçalho */
+}
+
+/* Estilo do Header */
+header {
+    width: 100%;
+    background-color: #617eaa; /* Cor de fundo do cabeçalho */
+    padding: 12px; /* Padding ajustado para altura */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+/* Estilo da Interface */
+.interface {
+    display: flex;
+    justify-content: flex-start; /* Alinha a logo e o título à esquerda */
+    align-items: center;
+}
+
+/* Estilo da Logo */
+.logo img {
+    width: 50px; /* Tamanho da logo */
+    height: auto; /* Proporção da imagem */
+}
+
+/* Estilo do h1 */
+h1 {
+    color: white; /* Cor do texto do cabeçalho */
+    margin: 0;
+    text-align: left; /* Alinhamento do texto */
+    font-size: 24px; /* Tamanho da fonte */
+    margin-left: 15px; /* Espaço entre logo e título */
+}
+
+/* Container principal */
+.container {
+    width: 100%;
+    max-width: 400px; /* Largura do contêiner ajustada para 400px */
+    margin: 60px auto; /* Aumentando a margem superior para criar mais espaço */
+    padding: 20px; /* Aumentando o padding do contêiner */
+    background-color: #d9d9d9; /* Cor de fundo igual à da página */
+    border: 2px solid white; /* Borda branca */
+    box-shadow: none; /* Removendo a sombra */
+    border-radius: 0; /* Remover bordas arredondadas do contêiner */
+}
+
+/* Estilos do cabeçalho */
+.header {
+    text-align: center;
+    margin-bottom: 10px; /* Diminuindo a margem inferior do cabeçalho */
+}
+
+.header h1 {
+    font-size: 24px;
+    color: #333;
+}
+
+/* Estilos do formulário */
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilos do campo de entrada */
+.input-form-group {
+    width: 100%; /* Mantendo a largura total */
+    margin-bottom: 20px; /* Aumentando a distância entre a caixa de texto e os botões */
+}
+
+.input-form-group label {
+    color: black; /* Cor do texto do rótulo (E-mail e Senha) */
+    margin-bottom: 5px; /* Adicionando margem inferior ao rótulo */
+    margin-top: 15px; /* Adicionando margem superior para espaço entre o cabeçalho e as labels */
+    border-radius: 4px; /* Bordas levemente arredondadas para as labels */
+    padding: 5px; /* Adicionando um pouco de padding para as labels */
+}
+
+.input-form-group input {
+    width: calc(100% - 20px); /* Subtrai o padding */
+    padding: 10px;
+    border: 1px solid #ccc; /* Borda padrão das caixas de texto */
+    border-radius: 4px; /* Bordas levemente arredondadas para os inputs */
+    font-size: 16px;
+    color: black; /* Cor do texto na caixa de texto */
+}
+
+.input-form-group input:focus {
+    outline: none; /* Removendo contorno padrão */
+    border-color: #004aad; /* Cor da borda ao focar */
+}
+
+/* Estilos dos links */
+.forgot-password {
+    text-align: left; /* Alinha o texto à esquerda */
+    color: #004aad; /* Cor do link */
+    text-decoration: none; /* Remove sublinhado */
+}
+
+.forgot-password:hover {
+    text-decoration: underline; /* Sublinha ao passar o mouse */
+}
+
+.create-account {
+    text-align: center; /* Centraliza o texto */
+    color: #004aad; /* Cor do link */
+    text-decoration: underline; /* Adicionando traço no link */
+}
+
+/* Botões de ação */
+.form-group {
+    display: flex; /* Ativa o Flexbox */
+    justify-content: space-between; /* Distribui os botões uniformemente */
+    margin-top: 10px; /* Adicionando margem superior para espaçamento */
+}
+
+.btn {
+    width: 48%; /* Largura dos botões ajustada para ocupar metade do espaço */
+    padding: 10px; /* Ajustando o padding dos botões */
+    border: none; /* Removendo a borda dos botões */
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: center; /* Centralizando o texto dentro do botão */
+    border-radius: 4px; /* Bordas levemente arredondadas para os botões */
+}
+
+.btn-login {
+    background-color: #004aad; /* Cor do botão de login */
+    color: white;
+}
+
+.btn-login:hover {
+    background-color: #003b8c; /* Cor ao passar o mouse */
+}
+
+.btn-secondary {
+    background-color: #6c757d; /* Cor do botão secundário */
+    color: white;
+}
+
+.btn-secondary:hover {
+    background-color: #5a6268; /* Cor ao passar o mouse */
+}
+
+/* Estilos do hr */
+hr {
+    border: 0; /* Remove a borda padrão */
+    height: 1px; /* Altura da linha */
+    background-color: #8d8b89; /* Cor da linha */
+    margin: 10px 0; /* Margem acima e abaixo da linha */
+}
+
+/* Responsividade */
+@media (max-width: 480px) {
+    .container {
+        width: 90%; /* Largura do contêiner em telas pequenas */
+    }
+    
+    h1 {
+        font-size: 20px; /* Reduzindo o tamanho da fonte do título em telas pequenas */
+    }
+
+    .input-form-group input {
+        font-size: 14px; /* Reduzindo o tamanho da fonte das caixas de texto */
+    }
+
+    .btn {
+        font-size: 14px; /* Reduzindo o tamanho da fonte dos botões */
+    }
+}
